@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>哈尔滨工业大学出版社</title>
+    <link rel="stylesheet" href="./css/cssreset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- ==> S 网页的头部布局 -->
+    <div class="h-header">
+        <!-- ==> S 顶部的用户导航区域 -->
+        <div class="top-nav">
+            <!-- logo盒子 -->
+            <div class="logo">
+                <h1>哈尔滨工业大学出版社</h1>
+                <a href="#">
+                    <img src="./imgs/logo.jpg" alt="logo" title="哈尔滨工业大学出版社">
+                </a>
+            </div>
+
+            <!-- 右侧用户导航 -->
+            <div class="user-nav">
+                <ul class="clearfix">
+                    <!-- 消息框 -->
+                    <li class="msg-wrap user-nav-item">
+                        <a href="#" class="msg">
+                            <span class="msg-num">12</span>
+                        </a>
+                    </li>
+                    <!-- 用户头像和用户名 -->
+                    <li class="user user-nav-item">
+                        <a href="#">
+                            <img class="avatar" src="./imgs/a2.jpg" alt="李三的头像" title="头像">
+                        </a>
+                        <div href="#" class="username">
+                            张三
+                            <i class="triangle-down icon"></i>
+                            <ul class="user-menu-cover triangle-up-s cover">
+                                <li><a href="#"></a>我的资源</li>
+                                <li><a href="#"></a>我的订单</li>
+                                <li><a href="#"></a>个人资料</li>
+                                <li><a href="#"></a>退出登录</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 选择教师端 学生端 -->
+                    <li class="teach-stu-change user-nav-item">
+                        <div href="#">
+                            教师端
+                            <i class="triangle-down icon"></i>
+                            <ul class="user-teach-stu triangle-up-s cover">
+                                <li><a href="#"></a>教师端</li>
+                                <li><a href="#"></a>学生端</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 搜索框 -->
+            <div class="search">
+                <div href="#" class="cursor-sel">课程 <i class="triangle-down icon-sel"></i>
+                    <ul class="course-menu cover">
+                        <li><a href="#">课程</a></li>
+                        <li><a href="#">教材</a></li>
+                    </ul>
+                </div><!-- 中间的换行符会产生间隙  可以用浮动 float-->
+                <input type="text">
+                <a href="#" class="icon-search"></a>
+                <!-- <img src="./imgs/search.gif" alt="">自己实现的地方 -->
+            </div>
+        </div>
+        <!-- ==> E 顶部的用户导航区域 -->
+        <!-- ==> S 主导航区域 -->
+        <div class="site-nav">
+            <!-- 设置右侧背景的盒子 -->
+            <div class="bg-red-wrap">
+                <!-- 右侧背景的子盒子  是父盒子的50% -->
+                <div class="bg-red">
+
+                </div>
+            </div>
+            <div class="site-nav-wrap">
+                <!-- 导航栏左侧的主导航区域 -->
+                <div class="main-nav">
+                    <ul class="main-nav-list">
+                        <li class="menu-item"><a href="#" class="cur">首页</a></li>
+                        <li class="menu-item"><a href="#">课程</a></li>
+                        <li class="menu-item"><a href="#">教材</a></li>
+                        <li class="menu-item">|</li>
+                        <li class="menu-item"><a href="#">我的学习</a></li>
+                    </ul>
+                </div>
+                <!-- 导航栏右侧的链接 -->
+                <div class="aside-nav clearfix">
+                    <ul class="aside-nav-list">
+                        <li><a href="#">通过课程邀请码加入课程</a></li>
+                        <li>|</li>
+                        <li><a href="#">通过序列号获取资源权限</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ==> E 主导航区域 -->
+
+    </div>
+    <!-- ==> E 网页的头部布局 -->
+
+
+    <!-- ==> S 网页的banner布局 -->
+    <div class="h-banner">
+        <!--为了得到上三角 <div class="box triangle-up-s"></div> -->
+        <div class="slide-bar">
+            <ul class="slide-bar-list">
+                <li class="slide-btn">
+                    <a href="#" class="cur-banner"></a>
+                </li>
+                <li class="slide-btn">
+                    <a href="#"></a>
+                </li>
+                <li class="slide-btn">
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </div>
+        <a href=""><img class="banner-img" src="./imgs/banner.png" alt=""></a>
+    </div>
+    <!-- ==> E 网页的banner布局 -->
+
+
+    <!-- ==> S 网页的主要列表 -->
+    <div class="h-main">
+        <!-- 课程列表顶部 -->
+        <div class="course-list p-module">
+            <div class="p-module-head clearfix">
+                <div class="p-module-title">
+                    <h3>推荐课程</h3>
+                </div>
+                <a href="#" class="p-module-more">more...</a>
+            </div>
+            <!-- 课程列表区域 -->
+            <div class="p-module-body clearfix">
+                <ul class="p-list">
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p1.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字1</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p2.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字2</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p3.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字3</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p4.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字4</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p1.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字5</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p2.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字1</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p4.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字2</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p3.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字3</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p2.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字4</a>
+                        </div>
+                    </li>
+                    <li class="p-list-item">
+                        <div class="p-img">
+                            <img src="./imgs/p1.jpg" alt="">
+                        </div>
+                        <div class="p-name">
+                            <a href="#">课程名字5</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="book-list p-module">
+            <div class="p-module-head clearfix">
+                <div class="p-module-title">
+                    <h3>推荐教材</h3>
+                </div>
+                <a href="#" class="p-module-more">more...</a>
+            </div>
+             <!-- 课程列表区域 -->
+             <div class="p-module-body clearfix">
+                    <ul class="p-list">
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p1.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字1</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p2.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字2</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p3.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字3</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p4.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字4</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p1.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字5</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p2.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字1</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p3.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字2</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p4.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字3</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p1.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字4</a>
+                            </div>
+                        </li>
+                        <li class="p-list-item">
+                            <div class="p-img">
+                                <img src="./imgs/p2.jpg" alt="">
+                            </div>
+                            <div class="p-name">
+                                <a href="#">课程名字5</a>
+                            </div>
+                        </li>
+                    </ul>
+    
+                </div>
+        </div>
+    </div>
+    <!-- ==> E 网页的主要列表 -->
+
+
+    <!-- ==> S 网页的底部区域 -->
+    <div class="h-footer">
+            <p>Copyrignt © 2004-2016 哈尔滨工业大学出版社  版权所有    京ICP备11017824号-7</p>
+    </div>
+    <!-- ==> E 网页的底部区域 -->
+</body>
+
+</html>

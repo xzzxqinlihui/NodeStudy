@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* 设置倒三角形 */
+.triangle-down {
+    border:5px solid #666;
+    border-style:solid dashed dashed;
+    border-color: #666 transparent transparent ;
+    width: 0;
+    height: 0;
+}
+   .clearfix::before,.clearfix::after {
+       content:" ";
+        display: table;
+   }
+   .clearfix::after {
+       clear: both;
+       height: 0;
+       line-height: 0px;
+       visibility: hidden;
+   }
+
+   .triangle-up-s {
+       position: relative;
+   }
+   .triangle-up-s::before,.triangle-up-s::after {
+        content: "";
+
+        border: 6px solid #f1f1f1;
+        border-style: dashed dashed solid;
+        border-color:transparent transparent #f1f1f1;
+
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 50%;
+        top:-12px;
+   }
+   .triangle-up-s::after {
+       border-color:transparent transparent #fff;
+       top:-10px;
+   }
+
+   /* 弹出的层的基类 */
+   .cover {
+       /* 设置弹出来的背景色为白色 */
+       background-color: #fff;
+   }

@@ -1,0 +1,391 @@
+@charset "utf-8";
+
+/* 整个页面的文字处理 */
+body {
+    color:#666;
+    font-size: 12px;
+}
+a {
+    color:#666;
+}
+/* ==> S 布局的CSS代码 */
+.h-header .top-nav {
+    margin:0 auto;
+    width:1190px;
+    height: 74px;
+    padding-top:24px;
+    /* border:1px solid blue; */
+}
+
+/* ==> S 设置logo */
+.h-header .top-nav .logo {
+    float: left;
+}
+.top-nav .logo h1 {
+    position: absolute;
+    text-indent: -1000px;
+}
+/* ==> E 设置logo */
+/* 设置右侧用户导航 */
+.h-header .top-nav .user-nav {
+    float:right;
+}
+/* ==> S 设置搜索框部分 */
+.h-header .top-nav .search {
+    margin:0 265px 0 357px;
+    padding-top: 10px;
+    position: relative;
+    line-height: 30px;
+}
+.h-header .search .cursor-sel {
+    position: relative;
+    display: inline-block;
+    width: 66px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid #e0e0e0;
+    
+}
+/* 搜索文本框 */
+.h-header .search input {
+    display: inline-block;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 1em;
+    border:1px solid #e0e0e0;
+}
+.search .cursor-sel,.search input {
+    float: left;
+}
+/* 设置下拉三角形 */
+.h-header .search .icon-sel {
+    float: right;
+    margin:14px 6px;
+}
+/* 设置弹出的课程选择 */
+.h-header .search .course-menu {
+    position: absolute;
+    top:30px;
+    left:-1px;
+    display: none;
+    z-index: 1000;
+}
+.h-header .search .course-menu li {
+    border:1px solid #e0e0e0;
+    height: 30px;
+    width: 66px;
+}
+/* 当个鼠标移动到课程上，弹出选择层 */
+.h-header .search .cursor-sel:hover .course-menu {
+    display: block;
+}
+.h-header .course-menu li:hover {
+    background-color: #ccc;
+}
+/* 设置放大镜样式 */
+.h-header .search .icon-search {
+    position: absolute;
+    left: 445px;
+    top:15px;
+    width: 30px; 
+    height: 30px;
+    background: url(../imgs/search.gif) no-repeat;
+    display: inline-block;
+}
+/* 自己实现的地方 */
+/* .search img {
+    position: absolute;
+    left:448px;
+    top:15px;
+} */
+/* ==> E 设置搜索框部分 */
+
+/* ==> S 顶部导航栏用户导航区域 */
+.user-nav {
+    padding-top:5px;
+}
+.h-header .user-nav .user-nav-item {
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 11px 0 14px;
+}
+/* 设置头像 */
+.h-header .user-nav .avatar {
+    width: 42;
+    height: 42px;
+    border-radius: 50%;
+}
+.h-header .user-nav .username{
+    display: inline-block;
+}
+
+.h-header .user-nav .user {
+    position: relative;
+}
+/* 设置弹出来的用户菜单 */
+.h-header .user-nav .user-menu-cover {
+    position: absolute;
+    left: 0;
+    top:40px;
+    display: none;
+    z-index: 1000;
+}
+.user-nav .user:hover .user-menu-cover {
+    display:block;
+}
+/* 设置用户菜单弹出的层 */
+.user-nav .user-menu-cover li {
+    display: block;
+    border:1px solid #f1f1f1;
+    width: 124px;
+    height: 40px;
+    text-align: center
+}
+.user-nav .user-menu-cover li:hover {
+    background-color: #f1f1f1;
+}
+
+/* 设置弹出教师端 学生端 */
+.user-nav .teach-stu-change {
+    position: relative;
+}
+.user-nav .user-teach-stu li{
+    display: block;
+    border:1px solid #f1f1f1;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+}
+.user-nav .user-teach-stu{
+    position: absolute;
+    display: none;
+    left:-40px;
+    top:40px;
+    z-index: 1000;
+}
+.user-nav .teach-stu-change:hover .user-teach-stu{
+    display:block;
+}
+.user-nav .user-teach-stu li:hover {
+    background-color: #f1f1f1;
+}
+
+/* 设置消息li */
+.h-header .user-nav .msg-wrap {
+    position: relative;
+    top:15px;
+    width: 34px;
+    height: 40px;
+    background: url('../imgs/sprite-msg.png') no-repeat left top;
+}
+/* 设置消息数字 */
+.h-header .user-nav .msg {
+    position: relative;
+    top:-18px;
+    right: -15px;
+    display: inline-block;
+    width: 34px;
+    height: 40px;
+    line-height: 16px;
+    padding-left:4px;
+    background: url('../imgs/sprite-msg.png') no-repeat left bottom;
+}
+.h-header .user-nav .msg-num {
+    color:#fff;
+
+}
+.h-header .user-nav i.icon {
+    display: inline-block;
+    float: right;
+    margin:17px 0 7px;
+}
+/* ==> E 顶部导航栏用户导航区域 */
+
+/* ============================================================================================ */
+
+/* ==> S 主导航区域 */
+
+/* 通栏盒子设置背景颜色 */
+.site-nav {
+    background-color: #3598db;
+    font-size: 16px;
+}
+/* 设置背景右侧的红色div */
+/* 父盒子 */
+.site-nav .bg-red-wrap {
+    margin-left:1190px;
+    position: relative;
+}
+/* 子盒子 */
+.site-nav .bg-red-wrap .bg-red {
+    width: 50%;
+    height: 60px;;
+    background-color: #e7594d;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+
+/* 版心盒子 */
+.site-nav .site-nav-wrap {
+    margin:0 auto;
+    height: 60px;
+    width: 1190px;
+    /* border:1px solid red; */
+}
+.site-nav li,.site-nav a {
+    color:#fff;
+}
+/* 左侧主导航 */
+
+.site-nav .main-nav {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+.site-nav .main-nav .menu-item {
+    float: left;
+    margin-right: 10px;
+}
+.site-nav .menu-item a {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 22px;
+    border-radius: 3px;
+}
+.site-nav .menu-item a.cur {
+    background: #2db0f9;
+    
+} 
+.site-nav .menu-item a:hover {
+    background: #2db0f9;
+}
+/* 右侧附属导航 */
+
+.site-nav .aside-nav {
+    float: right;
+    padding-left:20px;
+    background-color: #e7594d;
+}
+.site-nav .aside-nav li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+/* ==> E 主导航区域 */
+/* ==> E 布局的CSS代码 */
+
+/* ================================================================== */
+
+/* 为了设置上三角 做的demo */
+/* .box {
+    width: 200px;
+    height: 200px;
+    border:1px solid #f1f1f1;
+} */
+
+/* ==> S banner区域 */
+.h-banner {
+    overflow: hidden;
+    widows: 100%;
+    position: relative;
+    height: 404px;
+    background-color:#61caff ;
+}
+.h-banner .banner-img {
+    width:100%;
+}
+.h-banner .slide-bar {
+    width: 90px;
+    height: 14px;
+    /* background-color: red; */
+    position: absolute;
+    left: 50%;
+    margin-left:-45px;
+    top:376px;
+    z-index:100;
+}
+
+.h-banner .slide-bar .slide-btn {
+    float: left;
+}
+
+.h-banner .slide-btn a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../imgs/ico_circle.png) no-repeat -73px 1px;
+    margin-right: 15px;
+}
+.h-banner .slide-btn a.cur-banner,.h-banner .slide-btn a:hover {
+    background: url(../imgs/ico_circle.png) no-repeat -58px -22px;
+    
+}
+/* ==> E banner区域 */
+/* ============================================================= */
+
+/* ==> S 课程列表区域 */
+/* 课程推荐 */
+.h-main .course-list,.h-main .book-list{
+    width: 1190px;
+    margin:0 auto;
+    padding-top:40px;
+
+}
+.p-module .p-module-head {
+    font-size:22px;
+    line-height: 22px;
+    color:#1a1a1a;
+
+}
+.p-module .p-module-head .p-module-title {
+    height: 22px;
+    line-height: 22px;
+    padding-left:18px;
+    border-left:7px solid #2db0f9;
+    float: left;
+}
+
+/* more 超级链接 */
+.p-module .p-module-head .p-module-more {
+    float: right;
+    line-height: 22px;
+    font-size: 12px;
+    color:#5da7df;
+
+}
+
+/* 设置课程列表项 */
+.p-module .p-module-body .p-list-item {
+    padding-top:30px;
+    margin:0 14px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #1a1a1a;
+    float: left;
+}
+.p-module .p-list-item  img{
+    height: 180px;
+    width: 208px;
+    border:1px solid #e1e1e1;
+}
+
+/* ==> E 课程列表区域 */
+/* ============================================================== */
+/* ==> S 底部区域 */
+.h-footer {
+    background-color: #373a43;
+
+    height: 140px;
+    text-align: center;
+    padding-top:44px;
+    font-size: 16px;
+    color:#fff;
+}
+/* ==> E 底部区域 */
